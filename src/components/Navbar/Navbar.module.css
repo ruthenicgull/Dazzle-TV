@@ -1,8 +1,15 @@
 .navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
   display: flex;
   justify-content: center;
-  padding: 0.5rem;
   font-size: 0.75rem;
+  transition: all 400ms ease-in-out;
+}
+
+.navbar_black {
+  background-color: black;
 }
 
 .menu {
@@ -15,6 +22,15 @@
   justify-content: space-between;
 }
 
+.menu > li {
+  transition: all 200ms ease-in-out;
+}
+
+.menu > li:hover {
+  transform: scale(1.08);
+  color: white;
+}
+
 .icon {
-  height: 2rem;
+  height: 3rem;
 }
