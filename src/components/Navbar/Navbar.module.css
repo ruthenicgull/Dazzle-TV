@@ -6,6 +6,7 @@
   justify-content: center;
   font-size: 0.75rem;
   transition: all 400ms ease-in-out;
+  background-image: linear-gradient(black, rgba(255, 255, 255, 0));
 }
 
 .navbar_black {
@@ -29,6 +30,7 @@
 .menu > li:hover {
   transform: scale(1.08);
   color: white;
+  cursor: pointer;
 }
 
 .icon {

@@ -1,0 +1,56 @@
+.container {
+  position: relative;
+  height: 90vh;
+  object-fit: contain;
+  color: white;
+  /* padding: 15% 10%; */
+}
+
+.banner_items {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: fit-content;
+  max-width: 50%;
+  margin-left: 10%;
+}
+
+.title {
+  font-size: 3rem;
+  text-shadow: -2px 2px 5px black;
+}
+
+.play_button {
+  all: unset;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 100ms ease-in;
+}
+
+.play_button:hover {
+  background-color: white;
+  color: black;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: whitesmoke;
+  text-shadow: -2px 2px 5px black;
+}
+
+.fade_bottom {
+  position: absolute;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.452); */
+  width: 100%;
+  background-image: linear-gradient(180deg, transparent, transparent, black);
+}
