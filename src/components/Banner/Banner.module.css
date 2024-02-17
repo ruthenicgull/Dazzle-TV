@@ -10,8 +10,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: fit-content;
-  max-width: 50%;
   margin-left: 10%;
 }
 
@@ -37,20 +35,23 @@
 
 .play_button:hover {
   background-color: white;
-  color: black;
+  color: green;
 }
 
 .description {
   margin-top: 1rem;
   font-size: 0.75rem;
-  color: whitesmoke;
+  color: white;
   text-shadow: -2px 2px 5px black;
+  width: fit-content;
+  max-width: 50%;
 }
 
 .fade_bottom {
   position: absolute;
-  height: 100%;
+  bottom: 0;
+  height: 50%;
   /* background-color: rgba(0, 0, 0, 0.452); */
   width: 100%;
-  background-image: linear-gradient(180deg, transparent, transparent, black);
+  background-image: linear-gradient(180deg, transparent, black);
 }
