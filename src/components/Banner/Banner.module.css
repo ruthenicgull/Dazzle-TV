@@ -4,6 +4,7 @@
   object-fit: contain;
   color: white;
   /* padding: 15% 10%; */
+  margin-bottom: 1rem;
 }
 
 .banner_items {
@@ -35,7 +36,7 @@
 
 .play_button:hover {
   background-color: white;
-  color: green;
+  color: black;
 }
 
 .description {
@@ -50,8 +51,7 @@
 .fade_bottom {
   position: absolute;
   bottom: 0;
-  height: 50%;
-  /* background-color: rgba(0, 0, 0, 0.452); */
+  height: 20%;
   width: 100%;
   background-image: linear-gradient(180deg, transparent, black);
 }

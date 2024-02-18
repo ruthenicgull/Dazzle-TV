@@ -1,0 +1,62 @@
+.long_poster {
+  max-height: 18rem;
+  object-fit: contain;
+}
+
+.wide_poster {
+  max-height: 9rem;
+  object-fit: contain;
+}
+
+.actions {
+  color: white;
+}
+
+.container {
+  position: relative;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.container:hover .long_overlay {
+  display: block;
+  height: 100%;
+}
+
+.long_overlay {
+  display: none;
+  top: 0;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 200ms all ease-in-out;
+}
+
+.center_play_button {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover .wide_overlay {
+  display: flex;
+}
+
+.wide_overlay {
+  bottom: 0;
+  padding-bottom: 0.75rem;
+  width: 100%;
+  gap: 0.25rem;
+  position: absolute;
+  color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.445);
+  transition: all 200ms ease-in-out;
+}
