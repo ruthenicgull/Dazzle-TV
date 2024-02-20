@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Card.module.css";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
+import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 
 function Card({ imagePath, movieName, isLarge }) {
   return (
@@ -17,7 +18,7 @@ function Card({ imagePath, movieName, isLarge }) {
           <img className={styles.wide_poster} src={imagePath} alt={movieName} />
           <div className={styles.wide_overlay}>
             <h5 className={styles.title}>{movieName}</h5>
-            <PlayCircleIcon className={styles.wide_play_button} />
+            <PlayCircleOutlineIcon className={styles.wide_play_button} />
           </div>
         </>
       )}

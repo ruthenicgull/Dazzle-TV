@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+.container:hover {
+  transform: scale(1.03);
+}
+
 .container:hover .long_overlay {
   display: block;
   height: 100%;
@@ -31,7 +35,7 @@
   width: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
-  transition: 200ms all ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .center_play_button {
