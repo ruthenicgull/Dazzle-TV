@@ -63,7 +63,7 @@
     height: 70vh;
     border-radius: 1rem;
     border: 2px solid white;
-    box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.338);
+    box-shadow: 0 5px 30px 20px rgba(255, 255, 255, 0.338);
   }
 
   .title {
