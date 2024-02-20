@@ -20,3 +20,18 @@
 .cards_list::-webkit-scrollbar {
   display: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .cards_list {
+    padding: 0.25rem;
+  }
+
+  .container {
+    padding: 0.5rem 1rem;
+  }
+
+  .title {
+    color: white;
+    letter-spacing: 0.2rem;
+  }
+}
