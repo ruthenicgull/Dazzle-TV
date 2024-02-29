@@ -1,19 +1,10 @@
 .container {
-  height: 100vh;
-  overflow-y: hidden;
-  display: flex;
-  background-color: var(--red);
-}
-
-.background_image {
-  flex: 0.5;
-  object-fit: cover;
-  mix-blend-mode: darken;
-}
-
-.form_container {
   display: block;
-  flex: 0.5;
-  background-color: black;
-  color: white;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-color: var(--red);
+  background-blend-mode: darken;
+  background-position: center;
 }

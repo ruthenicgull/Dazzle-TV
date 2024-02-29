@@ -7,9 +7,8 @@ import HomeScreen from "./components/HomeScreen/HomeScreen.jsx";
 function App() {
   return (
     <>
-      {/* <LoginPage /> */}
-      {/* <Navbar /> */}
-      <HomeScreen />
+      <LoginPage />
+      {/* <HomeScreen /> */}
     </>
   );
 }

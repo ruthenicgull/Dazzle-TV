@@ -1,61 +1,56 @@
-.container {
+.form {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-top: 50%;
-  transform: translateY(-50%);
-  height: 70%;
-  width: 60%;
-  max-width: 90%;
-}
-
-.header {
-  flex: 0.15;
+  color: white;
+  background-color: black;
+  width: 90%;
+  max-width: 18rem;
+  align-items: center;
+  padding: 1rem;
   border: 1px solid white;
-  border-radius: 30px 30px 0 0;
-  font-size: 1.25rem;
+  gap: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
 }
 
 .header_text {
-  width: fit-content;
-  margin: auto;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-form {
-  flex: 0.85;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  border: 1px solid white;
-  border-radius: 0 0 30px 30px;
+  font-size: 1.5rem;
 }
 
 .field {
-  font-size: 1rem;
-  max-width: 90%;
-  width: 80%;
-  height: 2.5rem;
-  border-radius: 30px;
-  padding: 0 1.5rem;
-  background-color: var(--inputFieldGray);
-  border: none;
+  width: 90%;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background-color: rgb(39, 39, 39);
+  border: unset;
   color: whitesmoke;
+}
+
+.field::placeholder {
+  color: gray;
 }
 
 .submit_button {
   background-color: var(--red);
-  color: white;
+  color: whitesmoke;
+  outline: none;
+  border: unset;
   cursor: pointer;
 }
 
+.submit_button:focus {
+  border: 2px solid white;
+}
+
 .signup_link {
-  font-size: 0.8rem;
-  text-align: right;
-  width: 80%;
-  padding: 0 1.5rem;
+  font-size: 0.75rem;
   cursor: pointer;
+}
+
+.signup_link:hover {
+  color: var(--red);
 }
