@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./HomeScreen.module.css";
-import Navbar from "../Navbar/Navbar";
-import Banner from "../Banner/Banner";
-import Row from "../Row/Row";
+import Navbar from "../../components/Navbar/Navbar";
+import Banner from "../../components/Banner/Banner";
+import Row from "../../components/Row/Row";
 import requests from "../../requests";
 
-function HomePage() {
+function HomeScreen() {
   return (
     <div className={styles.container}>
       <Navbar />
@@ -26,4 +26,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomeScreen;

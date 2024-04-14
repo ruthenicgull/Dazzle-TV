@@ -1,14 +1,24 @@
 import { useState } from "react";
 import "./App.css";
-import LoginPage from "./components/LoginPage/LoginPage";
+import LoginPage from "./screens/LoginPage/LoginPage";
 import Navbar from "./components/Navbar/Navbar";
-import HomeScreen from "./components/HomeScreen/HomeScreen.jsx";
+import HomeScreen from "./screens/HomeScreen/HomeScreen.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+  const user = null;
+
   return (
     <>
-      <LoginPage />
-      {/* <HomeScreen /> */}
+      <Router>
+        {!user ? (
+          <LoginPage />
+        ) : (
+          <Routes>
+            <Route exact path="/" element={<HomeScreen />} />
+          </Routes>
+        )}
+      </Router>
     </>
   );
 }

@@ -33,7 +33,7 @@ function Banner() {
     >
       <div className={styles.banner_items}>
         <h1 className={styles.title}>
-          {movie?.title || movie?.name || movie.original_name}
+          {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <button className={styles.play_button}>
           <PlayArrowIcon />

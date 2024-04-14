@@ -49,6 +49,7 @@
 .signup_link {
   font-size: 0.75rem;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .signup_link:hover {
